@@ -1,7 +1,7 @@
 # Weather Widget ☀️
 
 You can view the page here:
-
+https://catrockout.github.io/weather-widget-js/
 
 ### Description:
 This is a weather widget developed using JavaScript. The widget allows users to input a locality and receive weather information for the next 5 days in advance. The weather data is retrieved from an API, providing accurate and up-to-date forecasts.
@@ -13,7 +13,7 @@ This is a weather widget developed using JavaScript. The widget allows users to 
 - **User-Friendly Interface**: The widget provides a clean and intuitive interface for users to interact with.
 
 ### API Integration:
-This weather widget utilizes the "http://api.openweathermap.org" API to fetch weather data.
+This weather widget utilizes the http://api.openweathermap.org API to fetch weather data.
 
 ### How to Use:
 1. Enter the name of a locality in the input field.
