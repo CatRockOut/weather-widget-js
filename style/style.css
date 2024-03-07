@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #212121;
+}
+
+span, p, a {
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+
+/* HEADER
+-------------------------------------- */
+h3 {
+    width: 100%;
+    margin: 27px 0 27px;
+    font-weight: 700;
+}
+
+h3 a {
+    display: flex;
+    justify-content: center;
+}
+
+h3 span {
+    display: flex;
+    align-items: center;
+    color: #FF4F00;
+}
+
+h3 span:last-child {
+    flex-direction: column;
+    color: #FFF;
+    background-color: #FF4F00;
+    width: 20px;
+    height: 18px;
+}
+
+/* Search input */
+.search {
+    width: 327px;
+    height: 49px;
+    border: 1px solid #ababab;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.search::placeholder {
+    color: #000;
+    opacity: .2;
+}
+
+.search::-webkit-search-cancel-button,
+.search::-webkit-search-decoration,
+.search::-webkit-search-results-button,
+.search::-webkit-search-results-decoration {
+    display: none;
+}
+
+.clear-search {
+    background-image: url(../img/custom-cross.svg);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    transform: translate(-220%, 143%);
+    cursor: pointer;
+}
+
+.celected-city,
+.error-text {
+    display: block;
+    color: #676767;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: calc(10 / 15);
+    letter-spacing: .2px;
+    margin: 0 0 10px 15px;
+}
+
+.error-text {
+    display: none;
+}
+
+/* Widget */
+.little-widget {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 327px;
+    height: 108px;
+    background-color: #FF4F00;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.widget__inner h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: calc(54 / 79);
+    letter-spacing: -3.24px;
+    margin: 8px 5px 15px 8px;
+}
+
+.widget__inner-temp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.widget__inner-temp span {
+    display: flex;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: calc(14 / 20);
+    letter-spacing: .28px;
+}
+
+.temp__max {
+    display: flex;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: calc(14 / 25);
+    letter-spacing: -1.19px;
+}
+
+.widget__type {
+    display: flex;
+}
+
+.widget__inner-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.widget__inner-type span {
+    display: flex;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: calc(14 / 20);
+    letter-spacing: .28px;
+    margin: 8px 5px 8px 0;
+}
+
+.widget__inner-type span:last-child {
+    font-weight: 300;
+}
+
+
+/* MAIN: Weather cards
+-------------------------------------- */
+main {
+    width: 100%;
+}
+
+.weather-days {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-day {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+}
+
+.card-day:first-child {
+    border-top: 1px solid #dddddd;
+}
+
+.name-day {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: calc(17 / 25);
+    letter-spacing: .34px;
+}
+
+.type-weather {
+    text-align: center;
+}
+
+.description-weather {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: calc(14 / 20);
+    letter-spacing: .28px;
+    text-align: center;
+}
+
+.card-day__temp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.day-type {
+    font-size: .6rem;
+    font-weight: 300;
+    line-height: calc(9 / 13);
+    letter-spacing: .18px;
+}
+
+.day-type:first-child {
+    margin-bottom: 12px;
+}
+
+.day-type__temp {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: calc(14 / 20);
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}

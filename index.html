@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather widget</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>
+                <a href="#">
+                    <span>foxmind</span>
+                    <span>ed</span>
+                </a>
+            </h3>
+            <input class="search" type="search" placeholder="write the name of the city...">
+            <span class="clear-search"></span>
+            <span class="celected-city">Celected:</span>
+            <span class="error-text">WRONG NAME!</span>
+
+            <div class="little-widget">
+                <div class="widget__inner">
+                    <h1 class="temp__min">?&degC</h1>
+                    <div class="widget__inner-temp">
+                        <span class="type-weather">—</span>
+                        <span class="temp__max">?&degC</span>
+                    </div>
+                </div>
+                <div class="widget__type">
+                    <div class="widget__inner-type">
+                        <span class="description-weather">Description of weather</span>
+                        <span class="celected-city">City, Country</span>
+                    </div>
+                    <img class="weather-picture" src="./img/fox.svg" alt="weather-picture">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <ul class="weather-days">
+                <li class="card-day">
+                    <span class="name-day">DAY</span>
+                    <img class="weather-picture" src="./img/fox.svg" alt="weather-picture">
+                    <span class="type-weather">—</span>
+                    <div class="card-day__temp">
+                        <span class="day-type">Day</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type">Night</span>
+                    </div>
+                </li>
+                <li class="card-day">
+                    <span class="name-day">DAY</span>
+                    <img class="weather-picture" src="./img/fox.svg" alt="weather-picture">
+                    <span class="type-weather">—</span>
+                    <div class="card-day__temp">
+                        <span class="day-type">Day</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type">Night</span>
+                    </div>
+                </li>
+                <li class="card-day">
+                    <span class="name-day">DAY</span>
+                    <img class="weather-picture" src="./img/fox.svg" alt="weather-picture">
+                    <span class="type-weather">—</span>
+                    <div class="card-day__temp">
+                        <span class="day-type">Day</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type">Night</span>
+                    </div>
+                </li>
+                <li class="card-day">
+                    <span class="name-day">DAY</span>
+                    <img class="weather-picture" src="./img/fox.svg" alt="weather-picture">
+                    <span class="type-weather">—</span>
+                    <div class="card-day__temp">
+                        <span class="day-type">Day</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type">Night</span>
+                    </div>
+                </li>
+                <li class="card-day">
+                    <span class="name-day">DAY</span>
+                    <img class="weather-picture" src="./img/fox.svg" alt="weather-picture">
+                    <span class="type-weather">—</span>
+                    <div class="card-day__temp">
+                        <span class="day-type">Day</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type__temp">— &degC</span>
+                        <span class="day-type">Night</span>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
